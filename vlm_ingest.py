@@ -1,4 +1,4 @@
-import json, os, sys
+git remote -vimport json, os, sys
 import ollama
 import chromadb
 
