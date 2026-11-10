@@ -1,0 +1,548 @@
+[
+  {
+    "id": "TC01",
+    "category": "simple_fact",
+    "question": "What is the characteristic compressive strength of M30 concrete at 28 days?",
+    "answer": "Based on the provided IS456 excerpts, the specified characteristic compressive strength of 150 mm cube at 28 days for M30 concrete is $30 \\text{ N/mm}^2$ (as per the table under Ordinary Concrete).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p115 cl.unknown (table)",
+      "IS456.pdf p17 cl.unknown (table)",
+      "IS456.pdf p115 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC02",
+    "category": "simple_fact",
+    "question": "What are the five environmental exposure conditions used to classify the general environment of concrete?",
+    "answer": "The general environment to which the concrete will be exposed during its working life is classified into five levels of severity: mild, moderate, severe, very severe, and extreme (as described in Table 3, as per Clause 8.2.2.1).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p19 cl.8.2.2.1 (text)",
+      "IS456.pdf p19 cl.unknown (table)",
+      "IS456.pdf p2 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC03",
+    "category": "simple_fact",
+    "question": "What is the maximum cement content that should normally not be exceeded unless special consideration is given?",
+    "answer": "Cement content not including fly ash and ground granulated blast furnace slag in excess of 450 kglm' should not be used unless special consideration has been given in design due to the increased risk of cracking due to drying shrinkage in thin sections, early thermal cracking, and the increased risk of damage due to alkali silica reactions (as per Clause 8.2.4.2).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p20 cl.8.2.4.2 (text)",
+      "IS456.pdf p21 cl.unknown (table_note)",
+      "IS456.pdf p19 cl.8.2.4.1 (text)"
+    ]
+  },
+  {
+    "id": "TC04",
+    "category": "simple_fact",
+    "question": "What is the approximate total shrinkage strain that may be taken for design in the absence of test data?",
+    "answer": "The approximate value of the total shrinkage strain for design may be taken as 0.0003 in the absence of test data (as per Clause 6.2.4.1).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p17 cl.6.2.4.1 (text)",
+      "IS456.pdf p70 cl.38.1 (text)",
+      "IS456.pdf p33 cl.19.5.1 (text)"
+    ]
+  },
+  {
+    "id": "TC05",
+    "category": "simple_fact",
+    "question": "What is the maximum compressive strain in concrete in bending at the ultimate limit state?",
+    "answer": "The maximum strain in concrete at the outermost compression fibre is taken as 0.003 in bending (as per IS456.pdf, page 70, clause 38.1).",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p71 cl.38.1 (text)",
+      "IS456.pdf p70 cl.38.1 (text)",
+      "IS456.pdf p77 cl.43.2 (text)"
+    ]
+  },
+  {
+    "id": "TC06",
+    "category": "simple_fact",
+    "question": "What is the minimum number of longitudinal bars required in rectangular and circular columns?",
+    "answer": "The minimum number of longitudinal bars provided in a column is:\n*   Four in rectangular columns.\n*   Six in circular columns (as per Clause 26.5.3.1).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p49 cl.26.5.3 (text)",
+      "IS456.pdf p47 cl.26.4.2.1 (text)",
+      "IS456.pdf p82 cl.1 (text)"
+    ]
+  },
+  {
+    "id": "TC07",
+    "category": "simple_fact",
+    "question": "What minimum percentage of reinforcement should be provided in either direction of a slab when high-strength deformed bars are used?",
+    "answer": "When high strength deformed bars are used, the minimum reinforcement in either direction in slabs can be reduced to 0.12 percent of the total cross-sectional area (as per Clause 26.5.2.1).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p49 cl.26.5.2.1 (text)",
+      "IS456.pdf p67 cl.34.5 (text)",
+      "IS456.pdf p54 cl.30.7 (text)"
+    ]
+  },
+  {
+    "id": "TC08",
+    "category": "simple_fact",
+    "question": "What restrictions are specified for the diameter of reinforcing bars in slabs?",
+    "answer": "The diameter of reinforcing bars shall not exceed one-eighth of the total thickness of the slab (Clause 26.5.2.2).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p49 cl.26.5.2.2 (text)",
+      "IS456.pdf p47 cl.26.4.2.1 (text)",
+      "IS456.pdf p46 cl.26.3.2 (text)"
+    ]
+  },
+  {
+    "id": "TC09",
+    "category": "table",
+    "question": "According to Table 16, what nominal concrete cover is required for severe exposure?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p47 cl.26.4.2 (text)",
+      "IS456.pdf p48 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC10",
+    "category": "table",
+    "question": "List the nominal concrete covers for mild, moderate, severe, very severe and extreme exposure conditions.",
+    "answer": "Based on Table 16 in IS456.pdf, the nominal concrete covers required are:\n\n*   Mild exposure: 20 mm\n*   Moderate exposure: 30 mm\n*   Severe exposure: 45 mm\n*   Very severe exposure: 50 mm\n*   Extreme exposure: 75 mm",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p47 cl.26.4.2 (text)",
+      "IS456.pdf p48 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC11",
+    "category": "table",
+    "question": "List the characteristic compressive strengths corresponding to M25, M35, M50 and M60 concrete.",
+    "answer": "Based on the provided IS code excerpts, the characteristic compressive strengths are as follows:\n\n*   **M25:** 25 N/mm\u00b2 (as per Source: IS456.pdf, page 17)\n*   **M35:** 35 N/mm\u00b2 (as per Source: IS456.pdf, page 17)\n*   **M50:** 45 N/mm\u00b2 (as per Source: IS456.pdf, page 17, under High Strength group)\n*   **M60:** 60 N/mm\u00b2 (as per Source: IS456.pdf, page 17, under Strength group)",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p115 cl.unknown (table)",
+      "IS456.pdf p17 cl.unknown (table)",
+      "IS456.pdf p17 cl.6.2.2 (text)"
+    ]
+  },
+  {
+    "id": "TC12",
+    "category": "table",
+    "question": "What ranges of slump are suggested for low, medium and high degrees of workability?",
+    "answer": "Based on the provided IS code excerpts, the suggested slump ranges corresponding to different degrees of workability are:\n\n*   **Low Workability:** 25-75 mm (as per the table on page 103)\n*   **Medium Workability:** 50-100 mm (as per the table on page 103)\n*   **High Workability:** 100 -150 mm (as per the table on page 103)",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p18 cl.7.1.1 (text)",
+      "IS456.pdf p103 cl.unknown (table)",
+      "IS456.pdf p18 cl.7.1 (text)"
+    ]
+  },
+  {
+    "id": "TC13",
+    "category": "table",
+    "question": "According to Table 4, for sulphate Class 5 conditions, what minimum cement content and maximum free water-cement ratio are specified?",
+    "answer": "According to Table 4 for sulphate Class 5 conditions:\n\n*   The minimum cement content is $400 \\text{ kg}/\\text{m}^3$.\n*   The maximum free water-cement ratio is $0.40$.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p19 cl.8.2.4.1 (text)",
+      "IS456.pdf p19 cl.8.2.2.4 (text)",
+      "IS456.pdf p19 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC14",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported slab for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported slab for 2 hours of fire resistance is 35 mm.",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Known bug: pipeline has answered 40 (the beam column) instead of 35 (slab column).",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table)",
+      "IS456.pdf p47 cl.26.4.3 (text)",
+      "IS456.pdf p9 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC15",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported beam for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported beam for 2 hours of fire resistance is 40 mm.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table)",
+      "IS456.pdf p47 cl.26.4.3 (text)",
+      "IS456.pdf p9 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC16",
+    "category": "table",
+    "question": "For 3 hours of fire resistance, compare the nominal cover requirements of simply supported beams, continuous beams, simply supported slabs and continuous slabs.",
+    "answer": "For 3 hours of fire resistance, the nominal cover requirements according to Table 16A are as follows:\n\n*   **Beams - Simply supported:** 60 mm (Table 16A)\n*   **Beams - Continuous:** 40 mm (Table 16A)\n*   **Slabs - Simply supported:** 45 mm (Table 16A)\n*   **Slabs - Continuous:** 35 mm (Table 16A)",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Compound multi-cell lookup \u2014 read the answer manually.",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table)",
+      "IS456.pdf p34 cl.21.3.1 (text)",
+      "IS456.pdf p47 cl.26.4.3 (text)"
+    ]
+  },
+  {
+    "id": "TC17",
+    "category": "notes",
+    "question": "According to Note 3 of Table 16, when is a 5 mm reduction in nominal cover permitted?",
+    "answer": "A reduction of 5 mm in nominal cover may be made for exposure conditions 'severe' and 'very severe', provided that the concrete grade is M35 and above (as per Note 3 of Table 16, as referenced in the excerpts).",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Was silently dropped (ListItem not captured) \u2014 should now retrieve real note content.",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p9 cl.unknown (table)",
+      "IS456.pdf p47 cl.26.4.3 (text)"
+    ]
+  },
+  {
+    "id": "TC18",
+    "category": "notes",
+    "question": "For mild exposure, can the nominal cover be reduced when the main reinforcement bars are no larger than 12 mm? If so, by how much?",
+    "answer": "For mild exposure, the nominal cover may be reduced by 5 mm for main reinforcement up to 12 mm diameter bars (as per NOTES to Table 16, Clause 26.4.2 and page 48).",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p48 cl.unknown (table_note)",
+      "IS456.pdf p47 cl.26.4.2.1 (text)"
+    ]
+  },
+  {
+    "id": "TC19",
+    "category": "notes",
+    "question": "Can the actual concrete cover normally deviate from the required nominal cover? State the permitted deviation given in the document.",
+    "answer": "Actual concrete cover should not deviate from the required nominal cover unless specified otherwise.\n\nThe permitted deviation is:\n*   **+10 mm** (as per page 48, clause unknown)\n*   **-0 mm** (as per page 9, NOTES to Table 16)",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p48 cl.unknown (table_note)",
+      "IS456.pdf p27 cl.12.3.2 (text)",
+      "IS456.pdf p9 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC20",
+    "category": "formula_risk",
+    "question": "According to Section 6.2.2, what formula is given for estimating the flexural strength of concrete from its characteristic cube compressive strength?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Correct: fc = 0.7*sqrt(fck). OCR drops the sqrt sign \u2014 watch for 0.7*fck (wrong) vs 0.7*sqrt(fck) (right).",
+    "top_sources": [
+      "IS456.pdf p17 cl.6.2.2 (text)",
+      "IS456.pdf p30 cl.16.2 (text)",
+      "IS456.pdf p77 cl.43.2 (text)"
+    ]
+  },
+  {
+    "id": "TC21",
+    "category": "formula_risk",
+    "question": "According to Section 6.2.3.1, what expression is used for the short-term static modulus of elasticity of concrete?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Correct: Ec = 5000*sqrt(fck). Watch for garbled/incomplete formulas.",
+    "top_sources": [
+      "IS456.pdf p17 cl.6.2.3.1 (text)",
+      "IS456.pdf p17 cl.6.2.3 (text)",
+      "IS456.pdf p89 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC22",
+    "category": "formula_risk",
+    "question": "Estimate the flexural strength of M25 concrete using the relationship given in the document.",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Correct answer is 3.5 N/mm^2 (0.7*sqrt(25)). A confidently-stated 17.5 means the sqrt was silently dropped.",
+    "top_sources": [
+      "IS456.pdf p17 cl.6.2.2 (text)",
+      "IS456.pdf p30 cl.16.2 (text)",
+      "IS456.pdf p70 cl.38.1 (text)"
+    ]
+  },
+  {
+    "id": "TC23",
+    "category": "formula_risk",
+    "question": "Estimate the short-term static modulus of elasticity of M25 concrete using the expression given in the document.",
+    "answer": "I could not find this in the provided IS code excerpts. The excerpt defines $E$ as the short term static modulus of elasticity in N/mm' and mentions that the modulus of elasticity of concrete can be assumed using an expression, but the actual mathematical expression for this calculation is not present in the provided text.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Correct answer is 25000 N/mm^2 (5000*sqrt(25)).",
+    "top_sources": [
+      "IS456.pdf p17 cl.6.2.3.1 (text)",
+      "IS456.pdf p89 cl.unknown (text)",
+      "IS456.pdf p17 cl.6.2.3 (text)"
+    ]
+  },
+  {
+    "id": "TC24",
+    "category": "formula_risk",
+    "question": "State the minimum shear reinforcement expression given for beams and define all the terms appearing in it.",
+    "answer": "The minimum shear reinforcement in the form of stirrups shall be provided such that:\n\n$$A' = \\text{total cross-sectional area of stirrup legs effective in shear}$$\n$$s' = \\text{stirrup spacing along the length of the member}$$\n$$b = \\text{breadth of the beam or breadth of the web of flanged beam}$$\n$$f_y = \\text{characteristic strength of the stirrup, reinforcement in N/mm' which shall not be taken greater than } A I5 \\text{ N/mm'}$$\n\n(as per Clause 26.5.1.6)",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "Check the actual inequality (Asv/(b*sv) >= 0.4/(0.87*fy)) is stated, not just the variable definitions.",
+    "top_sources": [
+      "IS456.pdf p49 cl.26.5.1.6 (text)",
+      "IS456.pdf p86 cl.unknown (text)",
+      "IS456.pdf p87 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC25",
+    "category": "calculation",
+    "question": "A beam has a web area of 300,000 mm\u00b2 and a web depth of 900 mm. Determine the minimum total area of side-face reinforcement required.",
+    "answer": "The minimum total area of side-face reinforcement required is $300 \\text{ mm}^2$.\n\nThis is calculated based on Clause 26.5.1.3 of IS456:\nThe requirement states that the total area of side face reinforcement shall be not less than $0.1$ percent of the Web area.\n\nCalculation:\nWeb Area = $300,000 \\text{ mm}^2$\nMinimum Reinforcement Area = $0.1\\% \\times 300,000 \\text{ mm}^2$\nMinimum Reinforcement Area = $0.001 \\times 300,000 \\text{ mm}^2$\nMinimum Reinforcement Area = $300 \\text{ mm}^2$",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p48 cl.26.5.1.3 (text)",
+      "IS456.pdf p48 cl.2 (text)",
+      "IS456.pdf p49 cl.26.5.1.6 (text)"
+    ]
+  },
+  {
+    "id": "TC26",
+    "category": "calculation",
+    "question": "A beam has a web depth of 800 mm, web thickness of 250 mm and web area of 240,000 mm\u00b2. Determine whether side-face reinforcement is required; if required, calculate its minimum total area, state how it should be distributed, and determine the maximum permissible spacing.",
+    "answer": "Based on the provided IS code excerpts, here is the determination for the side-face reinforcement:\n\n**1. Requirement for Side-Face Reinforcement:**\nSide-face reinforcement is required because the depth of the web in the beam ($800 \\text{ mm}$) exceeds $750 \\text{ mm}$ (as per Clause 26.5.1.3).\n\n**2. Minimum Total Area Calculation:**\nThe total area of side-face reinforcement shall be not less than $0.1$ percent of the Web area.\n*   Web Area = $240,000 \\text{ mm}^2$\n*   Minimum Area = $0.1\\% \\times 240,000 \\text{ mm}^2$\n*   Minimum Area = $0.001 \\times 240,000 \\text{ mm}^2 = 240 \\text{ mm}^2$.\n\n**3. Distribution:**\nThe reinforcement shall be distributed equally on the two faces (as per Clause 26.5.1.3).\n\n**4. Maximum Permissible Spacing:**\nThe spacing shall not exceed $300 \\text{ mm}$ or the web thickness, whichever is less (as per Clause 26.5.1.3).\n*   Web Thickness = $250 \\text{ mm}$\n*   Maximum Spacing = $\\min(300 \\text{ mm}, 250 \\text{ mm}) = 250 \\text{ mm}$.\n\n**Summary:**\nSide-face reinforcement is required. The minimum total area shall be $240 \\text{ mm}^2$, distributed equally on the two faces, with a maximum permissible spacing of $250 \\text{ mm}$.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p48 cl.26.5.1.3 (text)",
+      "IS456.pdf p38 cl.unknown (text)",
+      "IS456.pdf p85 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC27",
+    "category": "calculation",
+    "question": "For a two-way simply supported slab of shorter span 3.5 m reinforced with Fe415 high-strength deformed bars, determine the modified span-to-depth ratio given by the document.",
+    "answer": "I could not find this in the provided IS code excerpts. The excerpts mention that span to overall depth ratios are given for simply supported slabs (35) and continuous slabs (40), and that these values should be multiplied by 0.8 for high strength deformed bars of grade Fe 415, but the actual ratio values themselves are not provided in the text.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p40 cl.2 (text)",
+      "IS456.pdf p91 cl.unknown (text)",
+      "IS456.pdf p49 cl.26.5.2.1 (text)"
+    ]
+  },
+  {
+    "id": "TC28",
+    "category": "calculation",
+    "question": "Compare the modified span-to-depth ratios for simply supported and continuous two-way slabs when Fe415 reinforcement is used.",
+    "answer": "For two-way slabs of shorter spans (up to 3.5 m) with mild steel reinforcement, the span to overall depth ratios are generally assumed to satisfy vertical deflection limits for loading class up to $3 \\text{ kN/m}$ as follows:\n\n*   Simply supported slabs: 35 (as per Cl. 2)\n*   Continuous slabs: 40 (as per Cl. 2)\n\nFor high strength deformed bars of grade Fe 415, the values given above should be multiplied by $0.8$ (as per Cl. 2).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was previously answered as 28 for BOTH (wrong) \u2014 continuous should be 40*0.8=32.",
+    "top_sources": [
+      "IS456.pdf p40 cl.2 (text)",
+      "IS456.pdf p53 cl.30.2 (text)",
+      "IS456.pdf p36 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC29",
+    "category": "calculation",
+    "question": "A simply supported two-way slab has a shorter span of 3.5 m and uses Fe415 reinforcement. Using the deflection guidance in the document, estimate the corresponding effective depth.",
+    "answer": "I could not find this in the provided IS code excerpts. The excerpts mention that span to overall depth ratios are given for two-way slabs of shorter spans (up to 3.5 m) but do not provide the actual values or table necessary to estimate the effective depth.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "This is actually computable (3500mm / 28) \u2014 previously refused as 'could not find'. Check if it now does the division.",
+    "top_sources": [
+      "IS456.pdf p40 cl.2 (text)",
+      "IS456.pdf p91 cl.unknown (text)",
+      "IS456.pdf p54 cl.30.7 (text)"
+    ]
+  },
+  {
+    "id": "TC30",
+    "category": "calculation",
+    "question": "A concrete member is under severe exposure and uses M35 concrete. Determine the applicable nominal cover after using the reduction permitted by the document.",
+    "answer": "I could not find this in the provided IS code excerpts.\n\nThe excerpts state that for exposure conditions 'severe' and 'very severe', a reduction of 5 mm may be made where the concrete grade is M35 and above (as per NOTES to Table 16 and Table 16A), but they do not provide the initial nominal cover values from Table 16 or Table 16A necessary to determine the final applicable cover.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Correct once Note 3 is retrievable and applied: 45mm - 5mm = 40mm.",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p48 cl.unknown (table_note)",
+      "IS456.pdf p47 cl.26.4.2 (text)"
+    ]
+  },
+  {
+    "id": "TC31",
+    "category": "calculation",
+    "question": "Compare the nominal cover required for severe and very severe exposure. If M40 concrete is used and the permitted reduction is applicable, determine the resulting nominal cover for each.",
+    "answer": "Based on the provided excerpts, the nominal cover requirements and potential reductions are as follows:\n\n**Base Requirements (Table 16):**\n*   Nominal cover for **Severe** exposure is 45 mm (IS456.pdf, page 48).\n*   Nominal cover for **Very severe** exposure is 50 mm (IS456.pdf, page 48).\n\n**Reduction Rule:**\nNote 3 to Table 16 states that a reduction of 5 mm may be made for the exposure conditions 'severe' and 'very severe', provided the concrete grade is M35 and above (IS456.pdf, page 9). Since M40 concrete is used, this condition is met.\n\n**Calculated Nominal Covers:**\n\n1.  **For Severe Exposure:**\n    The nominal cover is reduced by 5 mm from the required value of 45 mm.\n    $45 \\text{ mm} - 5 \\text{ mm} = 40 \\text{ mm}$\n\n2.  **For Very Severe Exposure:**\n    The nominal cover is reduced by 5 mm from the required value of 50 mm.\n    $50 \\text{ mm} - 5 \\text{ mm} = 45 \\text{ mm}$",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Compound \u2014 check both base values (45/50) and whether the M35+ reduction gets applied to both.",
+    "top_sources": [
+      "IS456.pdf p9 cl.unknown (table_note)",
+      "IS456.pdf p48 cl.unknown (table)",
+      "IS456.pdf p47 cl.26.4.2 (text)"
+    ]
+  },
+  {
+    "id": "TC32",
+    "category": "figure",
+    "question": "Which graph in the document relates percentage tension reinforcement to a modification factor, and what quantity is represented by the different curves?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p39 cl.unknown (figure_caption)",
+      "IS456.pdf p39 cl.unknown (text)",
+      "IS456.pdf p71 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC33",
+    "category": "figure",
+    "question": "What relationship is represented by the graph for compression reinforcement?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was previously misattributed to Fig. 21 (wrong) instead of Fig. 5.",
+    "top_sources": [
+      "IS456.pdf p44 cl.26.2.2.6 (text)",
+      "IS456.pdf p40 cl.unknown (figure_caption)",
+      "IS456.pdf p40 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC34",
+    "category": "figure",
+    "question": "What types of reinforcement stress-strain curves are illustrated in the document?",
+    "answer": "The document illustrates:\n1. Stress-strain curves for concrete (FIG. 21) [Source: IS456.pdf, page 70].\n2. Representative stress-strain curves for reinforcement (FIG. 23) [Source: IS456.pdf, page 71; Source: IS456.pdf, page 70, clause 38.1].\n3. Typical curves for the type of steel used (given in Fig. 23) [Source: IS456.pdf, page 70, clause 38.1].",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p70 cl.unknown (figure_caption)",
+      "IS456.pdf p71 cl.unknown (text)",
+      "IS456.pdf p70 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC35",
+    "category": "figure",
+    "question": "What does Figure 4 represent, and what variables are shown on its horizontal and vertical axes?",
+    "answer": "I could not find this in the provided IS code excerpts (best match confidence too low: 0.00).",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Axis labels need VLM description, not just a caption \u2014 expected to still be incomplete in v1.",
+    "top_sources": [
+      "IS456.pdf p63 cl.32.3.1 (text)",
+      "IS456.pdf p50 cl.26.5.3.3 (text)",
+      "IS456.pdf p66 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC36",
+    "category": "paraphrase",
+    "question": "At what beam web depth does side-face reinforcement become necessary?",
+    "answer": "Side face reinforcement shall be provided if the depth of the web in a beam exceeds 750 mm (as per Clause 26.5.1.3).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p48 cl.26.5.1.3 (text)",
+      "IS456.pdf p48 cl.2 (text)",
+      "IS456.pdf p53 cl.29.3.2 (text)"
+    ]
+  },
+  {
+    "id": "TC37",
+    "category": "paraphrase",
+    "question": "I have a very deep beam. At what point do I need additional reinforcement along its sides, and how should that reinforcement be arranged?",
+    "answer": "Side face reinforcement shall be provided along the two faces where the depth of the web in a beam exceeds 750 mm (as per Clause 26.5.1.3).\n\nThe arrangement and requirements for this reinforcement are as follows:\n1.  **Total Area:** The total area of such reinforcement shall be not less than 0.1 percent of the Web area.\n2.  **Distribution:** All reinforcement shall be distributed equally on the two faces at a spacing not exceeding 300 mm or the web thickness, whichever is less.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p48 cl.26.5.1.3 (text)",
+      "IS456.pdf p52 cl.29.3.1 (text)",
+      "IS456.pdf p53 cl.29.3.2 (text)"
+    ]
+  },
+  {
+    "id": "TC38",
+    "category": "paraphrase",
+    "question": "How does the code account for the use of Fe415 bars when applying the simplified deflection guidance for short two-way slabs?",
+    "answer": "For high strength deformed bars of grade Fe 415, the span to overall depth ratios given above should be multiplied by 0.8 (as per IS456.pdf, page 40, clause 2).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "IS456.pdf p40 cl.2 (text)",
+      "IS456.pdf p91 cl.unknown (text)",
+      "IS456.pdf p53 cl.30.3 (text)"
+    ]
+  },
+  {
+    "id": "TC39",
+    "category": "adversarial",
+    "question": "If I know the concrete grade but don't have a direct tensile test result, how can I approximately determine its resistance to cracking in bending?",
+    "answer": "As an approximation, it will normally be satisfactory to calculate the steel stress on the basis of a cracked section and then reduce this by an amount equal to the tensile force generated by the triangular distributions having a value of zero at the neutral axis and a value at the centroid of the tension steel of $I/mm'$ instantaneously, reducing to $0.55 N/mm'$ in the long-term acting over the tension zone divided by the steel area (as per Annex F).",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "This phrasing doesn't match source wording well \u2014 refusal is acceptable here, not a failure.",
+    "top_sources": [
+      "IS456.pdf p84 cl.unknown (text)",
+      "IS456.pdf p31 cl.17.3 (text)",
+      "IS456.pdf p44 cl.26.2.2.5 (text)"
+    ]
+  }
+]

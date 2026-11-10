@@ -1,0 +1,100 @@
+[
+  {
+    "id": "TC14",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported slab for 2 hours of fire resistance?",
+    "answer": "Based on Table 16A, the nominal cover required for a simply supported slab for 2 hours of fire resistance is 45 mm. (As per Table 16A, row h=2, under the column corresponding to Nominal Cover > Simply supported).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Known bug: pipeline has answered 40 (the beam column) instead of 35 (slab column).",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC17",
+    "category": "notes",
+    "question": "According to Note 3 of Table 16, when is a 5 mm reduction in nominal cover permitted?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was silently dropped (ListItem not captured) \u2014 should now retrieve real note content.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p9 cl.1 (text)"
+    ]
+  },
+  {
+    "id": "TC18",
+    "category": "notes",
+    "question": "For mild exposure, can the nominal cover be reduced when the main reinforcement bars are no larger than 12 mm? If so, by how much?",
+    "answer": "I could not find this in the provided IS code excerpts.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p10 cl.26.5.2.1 (text)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC19",
+    "category": "notes",
+    "question": "Can the actual concrete cover normally deviate from the required nominal cover? State the permitted deviation given in the document.",
+    "answer": "I could not find this in the provided IS code excerpts (best match confidence too low: 0.03).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.1 (text)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.3 (text)"
+    ]
+  },
+  {
+    "id": "TC28",
+    "category": "calculation",
+    "question": "Compare the modified span-to-depth ratios for simply supported and continuous two-way slabs when Fe415 reinforcement is used.",
+    "answer": "For two-way slabs of shorter spans (up to 3.5 m) with mild steel reinforcement, the span to overall depth ratios are:\n*   Simply supported slabs: 35 (as per clause 2)\n*   Continuous slabs: 40 (as per clause 2)\n\nFor high strength deformed bars of grade Fe 415, these values should be multiplied by 0.8 (as per clause 2).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was previously answered as 28 for BOTH (wrong) \u2014 continuous should be 40*0.8=32.",
+    "top_sources": [
+      "sample.pdf p8 cl.2 (text)",
+      "sample.pdf p8 cl.1 (text)",
+      "sample.pdf p8 cl.24.2 (text)"
+    ]
+  },
+  {
+    "id": "TC30",
+    "category": "calculation",
+    "question": "A concrete member is under severe exposure and uses M35 concrete. Determine the applicable nominal cover after using the reduction permitted by the document.",
+    "answer": "Based on the provided excerpts, the table specifies the minimum nominal concrete cover required based on the level of exposure:\n\n| Exposure | Nominal Concrete Cover in mm not Less Than |\n| :--- | :--- |\n| Severe | 45 |\n\nThe excerpts do not contain information regarding a reduction permitted for M35 concrete or any other mechanism to reduce this specified minimum cover. Therefore, the applicable nominal cover based solely on the exposure level is 45 mm (as per the table).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Correct once Note 3 is retrievable and applied: 45mm - 5mm = 40mm.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.1 (text)",
+      "sample.pdf p5 cl.8.2.2.1 (text)"
+    ]
+  },
+  {
+    "id": "TC33",
+    "category": "figure",
+    "question": "What relationship is represented by the graph for compression reinforcement?",
+    "answer": "The excerpt mentions that an acceptable stress-strain curve is given in Fig. 21, and it details the design stress block parameters based on this curve (see Fig. 22).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was previously misattributed to Fig. 21 (wrong) instead of Fig. 5.",
+    "top_sources": [
+      "sample.pdf p9 cl.26.5.1.2 (text)",
+      "sample.pdf p11 cl.38.1 (text)",
+      "sample.pdf p9 cl.26.5.1.4 (text)"
+    ]
+  }
+]

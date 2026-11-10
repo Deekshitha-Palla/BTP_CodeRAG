@@ -1,0 +1,114 @@
+[
+  {
+    "id": "TC09",
+    "category": "table",
+    "question": "According to Table 16, what nominal concrete cover is required for severe exposure?",
+    "answer": "According to Table 16A, the nominal concrete cover required for severe exposure is 45 mm.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.4.1 (text)"
+    ]
+  },
+  {
+    "id": "TC10",
+    "category": "table",
+    "question": "List the nominal concrete covers for mild, moderate, severe, very severe and extreme exposure conditions.",
+    "answer": "Based on the provided IS code excerpts, the nominal concrete covers for the specified exposure conditions are as follows:\n\n*   **Mild:** Not less than 20 mm\n*   **Moderate:** 30 mm\n*   **Severe:** 45 mm\n*   **Very severe:** 50 mm\n*   **Extreme:** 75 mm\n\n(as per the table provided in the excerpts)",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.2.1 (text)",
+      "sample.pdf p5 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC11",
+    "category": "table",
+    "question": "List the characteristic compressive strengths corresponding to M25, M35, M50 and M60 concrete.",
+    "answer": "Based on the provided excerpts:\n\n*   **M25:** The compressive strength of M25 concrete is 15 N/mm\u00b2 (from the table listing compressive strengths for Ordinary Concrete).\n*   **M35:** The specified characteristic compressive strength of M35 concrete is 35 N/mm\u00b2 (from the table listing compressive strengths for Standard Concrete).\n*   **M60:** The specified characteristic compressive strength of M60 concrete is 60 N/mm\u00b2 (from the table listing compressive strengths for High Strength Concrete).\n*   **M50:** The value corresponding to 50 N/mm\u00b2 is listed in the context of High Strength Concrete, although M50 itself is not explicitly listed as a grade designation in that specific column.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p2 cl.unknown (table)",
+      "sample.pdf p3 cl.6.2.2 (text)",
+      "sample.pdf p3 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC12",
+    "category": "table",
+    "question": "What ranges of slump are suggested for low, medium and high degrees of workability?",
+    "answer": "The suggested ranges of slump for different degrees of workability, according to the provided table, are as follows:\n\n*   **Low Degree of Workability:** 25-75 mm (for Mass concrete; Lightly reinforced sections in slabs, beams, walls, columns; Floors) [Source: Table]\n*   **Medium Degree of Workability:** 50-100 or 75-100 mm (for Hand placed pavements; Canal lining; Strip footings Heavily reinforced sections in slabs, beams, walls, columns) [Source: Table]\n*   **High Degree of Workability:** 100-150 mm (for beams, walls, columns; Slipform work; Pumped concrete Trench fill) [Source: Table]",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p4 cl.unknown (table)",
+      "sample.pdf p4 cl.unknown (table_note)",
+      "sample.pdf p4 cl.7.1 (text)"
+    ]
+  },
+  {
+    "id": "TC13",
+    "category": "table",
+    "question": "According to Table 4, for sulphate Class 5 conditions, what minimum cement content and maximum free water-cement ratio are specified?",
+    "answer": "According to Table 4, for sulphate Class 5 conditions (where the concentration of sulphates expressed as SO > In Soil is More than 2.0), the maximum face water-cement ratio specified is 0.40. The minimum cement content value in this specific row is not explicitly provided in the corresponding cell.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p5 cl.8.2.2.4 (text)",
+      "sample.pdf p5 cl.8.2.4.1 (text)",
+      "sample.pdf p6 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC14",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported slab for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported beam for 2 hours of fire resistance is 45 mm.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Known bug: pipeline has answered 40 (the beam column) instead of 35 (slab column).",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC15",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported beam for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported beam for 2 hours of fire resistance is 40 mm.\n\n(Source: Table 16A)",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.3.2 (text)"
+    ]
+  },
+  {
+    "id": "TC16",
+    "category": "table",
+    "question": "For 3 hours of fire resistance, compare the nominal cover requirements of simply supported beams, continuous beams, simply supported slabs and continuous slabs.",
+    "answer": "Based on the provided excerpts from the IS code tables:\n\nFor a fire resistance duration corresponding to $h=3$ (from the table):\n\n*   **Simply supported beams:** The nominal cover requirement is 60 mm (as per the row where $h=3$ and the column for Nominal Cover > tance Beams > Simply supported).\n*   **Continuous beams:** The nominal cover requirement is 55 mm (as per the row where $h=3$ and the column for Nominal Cover > Continuous).\n\nThe provided excerpts do not contain specific data comparing the nominal cover requirements for simply supported slabs and continuous slabs.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Compound multi-cell lookup \u2014 read the answer manually.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p8 cl.23.3 (text)"
+    ]
+  }
+]

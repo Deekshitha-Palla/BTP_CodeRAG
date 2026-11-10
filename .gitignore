@@ -1,0 +1,45 @@
+# Vector database and copies of it
+chroma_db/
+chroma_db_backup*/
+
+# Test results and checkpoints
+test_runs/
+test_suite_checkpoint*.json
+review_items.txt
+coverage_report.txt
+
+# Logs and job output
+*.log
+*ollama*.log
+run_suite_pbs.log
+*.o[0-9]*
+*.e[0-9]*
+
+# Large generated files
+crops_docling/
+vlm_records.jsonl
+
+# Source document (copyrighted; keep it local)
+data/
+*.pdf
+
+# Python environment and caches
+venv/
+__pycache__/
+*.pyc
+
+# Environments, caches and generated files
+.venv/
+crops/
+new_files/
+offline_pkgs/
+*.pkl
+gmon.out
+gpu_usage.csv
+fail_items.txt
+review_items_vlm.txt
+blind_test_results_*.csv
+
+# Stray files with Windows path names
+C:*
+rC:*

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "TC14",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported slab for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported slab for 2 hours of fire resistance is 35 mm. (as per Table 16A)",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Known bug: pipeline has answered 40 (the beam column) instead of 35 (slab column).",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table_note)"
+    ]
+  },
+  {
+    "id": "TC17",
+    "category": "notes",
+    "question": "According to Note 3 of Table 16, when is a 5 mm reduction in nominal cover permitted?",
+    "answer": "A 5 mm reduction in nominal cover may be made for exposure conditions 'severe' and 'very severe', where the concrete grade is M35 and above (as per NOTES to Table 16, Note 3).",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Was silently dropped (ListItem not captured) \u2014 should now retrieve real note content.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC18",
+    "category": "notes",
+    "question": "For mild exposure, can the nominal cover be reduced when the main reinforcement bars are no larger than 12 mm? If so, by how much?",
+    "answer": "For mild exposure, the nominal cover may be reduced by 5 mm for main reinforcement up to 12 mm diameter bars (as per NOTES to Table 16, Clause 26.4.2, Note 1).",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p10 cl.26.5.2.1 (text)"
+    ]
+  },
+  {
+    "id": "TC19",
+    "category": "notes",
+    "question": "Can the actual concrete cover normally deviate from the required nominal cover? State the permitted deviation given in the document.",
+    "answer": "Actual concrete cover should not deviate from the required nominal cover by +10 mm -0 mm, unless specified otherwise (as per NOTES to Table 16, Note 2).",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC28",
+    "category": "calculation",
+    "question": "Compare the modified span-to-depth ratios for simply supported and continuous two-way slabs when Fe415 reinforcement is used.",
+    "answer": "For two-way slabs of shorter spans (up to 3.5 m) with mild steel reinforcement, the span to overall depth ratios are:\n*   Simply supported slabs: 35\n*   Continuous slabs: 40\n\nFor high strength deformed bars of grade Fe 415, these values should be multiplied by 0.8.\n\nThe modified span-to-depth ratios are calculated as follows:\n*   Simply supported slabs: $35 \\times 0.8 = 28$\n*   Continuous slabs: $40 \\times 0.8 = 32$",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Was previously answered as 28 for BOTH (wrong) \u2014 continuous should be 40*0.8=32.",
+    "top_sources": [
+      "sample.pdf p8 cl.2 (text)",
+      "sample.pdf p8 cl.1 (text)",
+      "sample.pdf p8 cl.24.2 (text)"
+    ]
+  },
+  {
+    "id": "TC30",
+    "category": "calculation",
+    "question": "A concrete member is under severe exposure and uses M35 concrete. Determine the applicable nominal cover after using the reduction permitted by the document.",
+    "answer": "The applicable nominal cover is determined as follows:\n\n1.  **Determine the base nominal cover:** According to Table 16, for 'Severe' exposure, the Nominal Concrete Cover is 45 mm (Source: sample.pdf, page 9, table).\n2.  **Determine the reduction:** Note 3 to Table 16 states that for the exposure condition 'severe' and 'very severe', a reduction of 5 mm may be made where the concrete grade is M35 and above (Source: sample.pdf, page 9, clause unknown, type table_note). Since the concrete grade is M35, the reduction is applicable.\n3.  **Calculate the final cover:**\n    Nominal Cover = 45 mm - 5 mm = 40 mm.\n\nThe applicable nominal cover is 40 mm.",
+    "verdict": "PASS",
+    "known_issue": true,
+    "note": "Correct once Note 3 is retrievable and applied: 45mm - 5mm = 40mm.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.1 (text)"
+    ]
+  },
+  {
+    "id": "TC33",
+    "category": "figure",
+    "question": "What relationship is represented by the graph for compression reinforcement?",
+    "answer": "The design stress block parameters are derived from the acceptable stress-strain curve given in Fig. 21. Specifically, the relationship for these parameters is:\n\n*   Area of stress block = $0.36 f_x x_x$\n*   Depth of centre of compressive force = $0.42 x$ from the extreme fibre in compression, where $f$ is the characteristic compressive strength of concrete and $x_x$ is the depth of the neutral axis (as per NOTE in clause 38.1).",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Was previously misattributed to Fig. 21 (wrong) instead of Fig. 5.",
+    "top_sources": [
+      "sample.pdf p11 cl.38.1 (text)",
+      "sample.pdf p9 cl.26.5.1.2 (text)",
+      "sample.pdf p9 cl.26.5.1.4 (text)"
+    ]
+  }
+]

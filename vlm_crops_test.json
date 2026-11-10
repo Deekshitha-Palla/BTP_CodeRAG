@@ -1,0 +1,62 @@
+[
+  {
+    "file": "p092_table53.png",
+    "kind": "table",
+    "index": 53,
+    "page": 92,
+    "caption": "",
+    "near_top_of_page": false,
+    "bbox_pts": [
+      60.9,
+      109.4,
+      506.1,
+      535.6
+    ],
+    "vlm_text": "| Case No. (1) | Type of Panel and Moments Considered (2) | Short Span Coefficients $\\alpha_x$ (Values of $I_y/I_x$) (3) | (4) | (5) | (6) | (7) | (8) | (9) | (10) | Long Span Coefficients $\\alpha_y$ for All Values of $I_y/I_x$ (11) |\n| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n| | | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.75 | 2.0 | |\n| 1 | Interior Panels: | | | | | | | | | |\n| | Negative moment at continuous edge | 0.032 | 0.037 | 0.043 | 0.047 | 0.051 | 0.053 | 0.060 | 0.065 | 0.032 |\n| | Positive moment at mid-span | 0.024 | 0.028 | 0.032 | 0.036 | 0.039 | 0.041 | 0.045 | 0.049 | 0.024 |\n| 2 | One Short Edge Continuous: | | | | | | | | | |\n| | Negative moment at continuous edge | 0.037 | 0.043 | 0.048 | 0.051 | 0.055 | 0.057 | 0.064 | 0.068 | 0.037 |\n| | Positive moment at mid-span | 0.028 | 0.032 | 0.036 | 0.039 | 0.041 | 0.044 | 0.048 | 0.052 | 0.028 |\n| 3 | One Long Edge Discontinuous: | | | | | | | | | |\n| | Negative moment at continuous edge | 0.037 | 0.044 | 0.052 | 0.057 | 0.063 | 0.067 | 0.077 | 0.085 | 0.037 |\n| | Positive moment at mid-span | 0.028 | 0.033 | 0.039 | 0.044 | 0.047 | 0.051 | 0.059 | 0.065 | 0.028 |\n| 4 | Two Adjacent Edges Discontinuous: | | | | | | | | | |\n| | Negative moment at continuous edge | 0.047 | 0.053 | 0.060 | 0.065 | 0.071 | 0.075 | 0.084 | 0.091 | 0.047 |\n| | Positive moment at mid-span | 0.035 | 0.040 | 0.045 | 0.049 | 0.053 | 0.056 | 0.063 | 0.069 | 0.035 |\n| 5 | Two Short Edges Discontinuous: | | | | | | | | | |\n| | Negative moment at continuous edge | 0.045 | 0.049 | 0.052 | 0.056 | 0.059 | 0.060 | 0.065 | 0.069 | --- |\n| | Positive moment at mid-span | 0.035 | 0.037 | 0.040 | 0.043 | 0.044 | 0.045 | 0.049 | 0.052 | 0.035 |\n| 6 | Two Long Edges Discontinuous: | | | | | | | | | |\n| | Negative moment at continuous edge | --- | --- | --- | --- | --- | --- | --- | --- | 0.045 |\n| | Positive moment at mid-span | 0.035 | 0.043 | 0.051 | 0.057 | 0.063 | 0.068 | 0.080 | 0.088 | 0.035 |\n| 7 | Three Edges Discontinuous (One Long Edge Continuous): | | | | | | | | | |\n| | Negative moment at continuous edge | 0.057 | 0.064 | 0.071 | 0.076 | 0.080 | 0.084 | 0.091 | 0.097 | --- |\n| | Positive moment at mid-span | 0.043 | 0.048 | 0.053 | 0.057 | 0.060 | 0.064 | 0.069 | 0.073 | 0.043 |\n| 8 | Three Edges Discontinuous (One Short Edge Continuous): | | | | | | | | | |\n| | Negative moment at continuous edge | --- | --- | --- | --- | --- | --- | --- | --- | 0.057 |\n| | Positive moment at mid-span | 0.043 | 0.051 | 0.059 | 0.065 | 0.071 | 0.076 | 0.087 | 0.096 | 0.043 |\n| 9 | Four Edges Discontinuous: | | | | | | | | | |\n| | Positive moment at mid-span | 0.056 | 0.064 | 0.072 | 0.079 | 0.085 | 0.089 | 0.100 | 0.107 | 0.056 |"
+  },
+  {
+    "file": "p092_table54.png",
+    "kind": "table",
+    "index": 54,
+    "page": 92,
+    "caption": "",
+    "near_top_of_page": false,
+    "bbox_pts": [
+      66.9,
+      683.6,
+      506.3,
+      747.9
+    ],
+    "vlm_text": "| $l_y / l_x$ | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.75 | 2.0 | 2.5 | 3.0 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| $\\alpha_x$ | 0.062 | 0.074 | 0.084 | 0.093 | 0.099 | 0.104 | 0.113 | 0.118 | 0.122 | 0.124 |\n| $\\alpha_y$ | 0.062 | 0.061 | 0.059 | 0.055 | 0.051 | 0.046 | 0.037 | 0.029 | 0.020 | 0.014 |"
+  },
+  {
+    "file": "p070_picture19.png",
+    "kind": "picture",
+    "index": 19,
+    "page": 70,
+    "caption": "FIG. 22 STRESS BLOCK PARAMETERS",
+    "near_top_of_page": false,
+    "bbox_pts": [
+      320.2,
+      584.2,
+      507.3,
+      686.9
+    ],
+    "vlm_text": "Based on the provided image from IS 456:2000, here is the description for a structural engineer:\n\n*   **Title:** Stress block in concrete (representing the design stress distribution for the limit state of collapse in flexure).\n*   **Axis Labels:**\n    *   **Vertical Axis:** Represents the depth from the extreme compression fiber.\n    *   **Horizontal Axis:** Represents the compressive stress in the concrete.\n*   **Curves/Regions:** A stress distribution curve showing a combined rectangular and parabolic profile.\n*   **Printed Values:**\n    *   $x_u$ (the total depth of the neutral axis).\n    *   $0.42x_u$ (a specific depth dimension on the vertical axis).\n    *   $0.36f_{ck}x_u$ (the value indicated on the horizontal axis)."
+  },
+  {
+    "file": "p070_picture20.png",
+    "kind": "picture",
+    "index": 20,
+    "page": 70,
+    "caption": "FIG. 21 STRESS-STRAIN CURVE FOR CONCRETE",
+    "near_top_of_page": false,
+    "bbox_pts": [
+      65.7,
+      510.4,
+      305.8,
+      717.4
+    ],
+    "vlm_text": "Based on the provided image from IS 456:2000, here is the description for a structural engineer:\n\n*   **Title:** No explicit title is printed within the figure frame.\n*   **Axis Labels:**\n    *   **Vertical Axis (Y-axis):** STRESS (indicated with an upward-pointing arrow).\n    *   **Horizontal Axis (X-axis):** STRAIN (indicated with a rightward-pointing arrow).\n*   **Curves:**\n    *   The figure contains three curves originating from the origin $(0,0)$.\n    *   The uppermost curve is annotated with the text \"**PARABOLIC CURVE**\" via a leader arrow.\n    *   The curves transition from a parabolic shape to a horizontal plateau.\n*   **Printed Values:**\n    *   **On the X-axis (Strain):** $0.002$ and $0.0035$.\n    *   **On the Y-axis (Stress levels at the plateau):**\n        *   $f_{ck}$ (corresponding to the top curve).\n        *   $0.67f_{ck}$ (corresponding to the middle curve).\n        *   $0.67f_{ck}/\\gamma_m$ (corresponding to the bottom curve)."
+  }
+]

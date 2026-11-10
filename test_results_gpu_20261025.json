@@ -1,0 +1,282 @@
+{
+  "E01": {
+    "result": "PASS",
+    "answer": "The scope of IS 456:2000 is that it deals with the general structural use of plain and reinforced concrete (page 12, clause 1). For the purpose of this standard, plain concrete structures are defined as those where reinforcement, if provided, is ignored for the determination of the strength of the structure (page 12, clause 1).\n\nRegarding the types of concrete structures covered:\n*   It covers the general structural use of plain and reinforced concrete.\n*   Special requirements for structures such as shells, folded plates, arches, bridges, chimneys, blast resistant structures, hydraulic structures, liquid retaining structures, and earthquake resistant structures are not covered in this standard; these structures must be covered in respective standards and used in conjunction with IS 456:2000 (page 12, clause 1)."
+  },
+  "E02": {
+    "result": "FAIL",
+    "answer": "I could not find this in the provided IS code excerpts."
+  },
+  "E03": {
+    "result": "PASS",
+    "answer": "Based on the provided IS 456 excerpts:\n\n*   **d:** Represents the effective depth of a beam or slab (as per Page 12, Clause 4).\n*   **D:** Represents the overall depth of a beam or slab or the diameter of a column; it is also the dimension of a rectangular column in the direction under consideration (as per Page 12, Clause 4).\n*   **Ld:** Represents the development length (as per Page 12, Clause 4).\n\nThe symbol $A_s$ was not defined in the provided IS 456 excerpts."
+  },
+  "E04": {
+    "result": "PASS",
+    "answer": "The grades of ordinary Portland cement explicitly listed in the provided excerpts are:\n\n1.  Ordinary Portland cement conforming to IS 12269 (as per Clause 53).\n2.  Ordinary Portland cement conforming to IS 8112 (as per Clause 43).\n3.  Ordinary Portland cement conforming to IS 269 (as per Clause 33 and Clause 5.1 (a) of the Amendment No. 5)."
+  },
+  "E05": {
+    "result": "PASS",
+    "answer": "For most work, 20 mm aggregate is suitable (as per clause 5.3.3)."
+  },
+  "E06": {
+    "result": "PASS",
+    "answer": "The pH value of water shall be not less than 6 (as per Clause 5.4.2)."
+  },
+  "E07": {
+    "result": "FAIL",
+    "answer": "The permissible limit for Chlorides (as Cl) in reinforced concrete work is 500 mg/l (as per Table 1, Clause 5.4)."
+  },
+  "E08": {
+    "result": "FAIL",
+    "answer": "The minimum concrete grade for reinforced concrete depends on the exposure conditions:\n\n*   For concrete in sea-water or exposed directly along the sea-coast, the requirement is at least M 30 Grade (as per Clause 8.2.8).\n*   According to the table provided, the minimum grades for reinforced concrete based on exposure are:\n    *   Mild exposure: M30\n    *   Moderate exposure: M25\n    *   Severe exposure: M30\n    *   Very severe exposure: M35\n    *   Extreme exposure: M40 (as per the table on page 21).\n\nAdditionally, the minimum grade of concrete for plain and reinforced concrete shall be as per Table 5 (as per Clause 6.1)."
+  },
+  "E09": {
+    "result": "REVIEW",
+    "answer": "The mix proportions are selected to ensure the workability of the fresh concrete and that when hardened, the concrete has the required strength, durability, and surface finish (Clause 9.1).\n\nFurthermore, the mix proportions chosen must be such that the concrete is of adequate workability for the placing conditions of the concrete and can properly be compacted with the means available (Clause 7.1). Suggested ranges of workability of concrete are given in accordance with IS 199 (Clause 7.1)."
+  },
+  "E10": {
+    "result": "FAIL",
+    "answer": "The durability clause in IS 456 has been enlarged to include detailed guidance concerning the factors affecting durability, which covers the importance of compaction, finishing, and curing (Source: IS456.pdf, page 2). Additionally, maintenance plays an important role in the sustained durability of concrete (Source: IS456.pdf, page 123)."
+  },
+  "EM01": {
+    "result": "PASS",
+    "answer": "The nominal cover required for a reinforced concrete member exposed to 'severe' conditions is 45 mm, as per Table 16 (Nominal Cover to Meet Durability Requirements, Clause 26.4.2).\n\nNote: For exposure conditions 'severe' and 'very severe', a reduction of 5 mm may be made if the concrete grade is M35 and above (NOTES to Table 16, Note 3)."
+  },
+  "EM02": {
+    "result": "PASS",
+    "answer": "The nominal concrete cover required for 'extreme' exposure is 75 mm, as per Table 16 (Clause 26.4.2)."
+  },
+  "EM03": {
+    "result": "PASS",
+    "answer": "The general environment to which the concrete will be exposed during its working life is classified into five levels of severity, which are mild, moderate, severe, very severe, and extreme (as per Clause 8.2.2.1).\n\nThese five exposure conditions are detailed in Table 3 (as per the table provided in the excerpts):\n1.  **Mild:** Concrete surfaces protected against weather or aggressive conditions, except those situated in a coastal area.\n2.  **Moderate:** Concrete surfaces sheltered from severe rain or freezing whilst wet.\n3.  **Severe:** Concrete surfaces exposed to severe rain, alternate wetting and drying, or occasional freezing whilst wet, or severe condensation.\n4.  **Very severe:** Concrete exposed to a coastal environment, concrete surfaces exposed to seawater spray, corrosive fumes, or severe freezing conditions whilst wet.\n5.  **Extreme:** The surface of members in the tidal zone or members in direct contact with liquid solid or aggressive chemicals."
+  },
+  "EM04": {
+    "result": "PASS",
+    "answer": "Based on the provided excerpts, the assumed standard deviation for M30 M35 concrete is 5.0 N/mm\u00b2 (as per the second version of Table 8)."
+  },
+  "EM05": {
+    "result": "PASS",
+    "answer": "The permissible limits for solids in mixing water are as given in Table 1 (Clause 5.4):\n\n*   **Organic Solids:** 200 mg/l (as per IS 3025 (Part 18))\n*   **Inorganic Solids:** 3000 mg/l (as per IS 3025 (Part 18))"
+  },
+  "EM06": {
+    "result": "PASS",
+    "answer": "20 mm aggregate is generally preferred because it is suitable for most work (as per Clause 5.3.3).\n\nThe restriction linking aggregate size to member thickness and reinforcement congestion is as follows:\n\n1.  **Restriction based on Member Thickness:** The nominal maximum size of coarse aggregate should not be greater than one-fourth of the minimum thickness of the member, provided that the concrete can be placed without difficulty so as to surround all reinforcement thoroughly and fill the corners of the form (as per Clause 5.3.3).\n2.  **Restriction based on Reinforcement Congestion/Cover:**\n    *   For heavily reinforced concrete members (such as ribs of main beams), the nominal maximum size of the aggregate should usually be restricted to 5 mm less than the minimum clear distance between the main bars or 5 mm less than the minimum cover to the reinforcement, whichever is smaller (as per Clause 5.3.3).\n    *   For concrete elements with thin sections, closely spaced reinforcement or small cover, consideration should be given to using a 10 mm nominal maximum size (as per Clause 5.3.3)."
+  },
+  "EM07": {
+    "result": "PASS",
+    "answer": "If you use deformed bars conforming to IS 1786 instead of plain bars, the design bond stress values shall be increased by 60 percent.\n\nThe base bond stresses are given in Table 21 (Design Bond Stress for Plain Bars in Tension) as per Clause 26.2.1.1.\n\n**Calculation Example (using M20 concrete as an illustration):**\n1.  **Base Bond Stress (from Table 21):** 1.2 N/mm\u00b2 (for M20 concrete).\n2.  **Increase Factor:** 60 percent (or 0.60).\n3.  **Calculation:** $1.2 \\text{ N/mm}^2 \\times 0.60 = 0.72 \\text{ N/mm}^2$.\n    *(Note: The resulting design bond stress for deformed bars in M20 concrete would be $0.72 \\text{ N/mm}^2$.)*"
+  },
+  "EM08": {
+    "result": "PASS",
+    "answer": "If two or more admixtures are used simultaneously in the same concrete mix, data should be obtained to assess their interaction and to ensure their compatibility (as per clause 5.5.3)."
+  },
+  "EM09": {
+    "result": "PASS",
+    "answer": "The maximum cement content not including fly ash and ground granulated blast furnace slag should not exceed 450 kglm' (as per clause 8.2.4.2).\n\nThis limit should not be exceeded unless special consideration has been given in the design due to the increased risk of:\n1. Cracking due to drying shrinkage in thin sections.\n2. Early thermal cracking.\n3. Increased risk of damage due to alkali silica reactions. (as per clause 8.2.4.2)"
+  },
+  "EM10": {
+    "result": "FAIL",
+    "answer": "I could not find this in the provided IS code excerpts."
+  },
+  "M01": {
+    "result": "PASS",
+    "answer": "The figure (Table 16A) is intended to provide the minimum nominal cover values of non-normal-weight aggregate concrete that must be provided to all reinforcement to meet a specified period of fire resistance (as per Clause 26.4.3).\n\nThe table correlates the required fire resistance time (h) with the specific member type and support condition (e.g., Beams - Simply supported, Slabs - Continuous, Columns, etc.) to determine the corresponding minimum nominal cover in millimeters.\n\nNote 1 of the table specifies that the nominal covers provided relate specifically to the minimum member dimensions given in Fig. 1."
+  },
+  "M02": {
+    "result": "PASS",
+    "answer": "When the special condition of Clause 22.6.2.1 applies, sections located at a distance less than $d$ from the face of the support may be designed for the same shear as that computed at distance $d$ (as per Clause 22.6.2.1)."
+  },
+  "M03": {
+    "result": "PASS",
+    "answer": "The coefficient used for the support moment at an interior support for the Dead load and imposed load (fixed) case is 12, as per Table 12 Bending Moment Coefficienls (Source: IS456.pdf, page 37)."
+  },
+  "M04": {
+    "result": "PASS",
+    "answer": "The shear coefficient for an imposed load (not fixed) at an interior support is 0.6, as per Table 13 (Clause 22.5.1 and 22.5.2)."
+  },
+  "M05": {
+    "result": "FAIL",
+    "answer": "I could not find this in the provided IS code excerpts."
+  },
+  "M06": {
+    "result": "PASS",
+    "answer": "Fig. 5 provides a modification factor. This factor is used to further modify the value of the span to depth ratio when considering the area of compression reinforcement (as per Cl. 23.2)."
+  },
+  "M07": {
+    "result": "PASS",
+    "answer": "Fig. 6 shows the Reduction Factors for Ratios of Span to Effective Depth for Flanged Beams [Source: sample.pdf, page 39, clause Fig. 6, type figure].\n\nThe figure has the following characteristics:\n*   **X-axis:** Ratio of Web Width to Flange Width (ranging from 0 to 1.0).\n*   **Y-axis:** Reduction Factor (ranging from 0.70 to 1.00).\n*   **Curve Description:** A single curve starts near a reduction factor of 0.80 at a low web-to-flange width ratio and rises to 1.00 at a ratio of 1.0. This indicates that a rectangular beam with no flange projection requires no reduction [Source: sample.pdf, page 39, clause Fig. 6, type figure].\n\nFurthermore, for flanged beams, the values of (a) or (b) are modified as per Fig. 6 [Source: IS456.pdf, page 39, clause unknown, type text]."
+  },
+  "M08": {
+    "result": "PASS",
+    "answer": "Yes, IS 456 requires side-face reinforcement.\n\nAs per Clause 26.5.1.3, where the depth of the web in a beam exceeds 750 mm, side face reinforcement shall be provided along the two faces. The total area of such reinforcement shall be not less than 0.1 percent of the Web area.\n\n(Source: IS456.pdf, page 48, clause 26.5.1.3)"
+  },
+  "M09": {
+    "result": "PASS",
+    "answer": "The maximum spacing of shear reinforcement measured along the axis of the member shall not exceed $0.75d$ for vertical stirrups, where $d$ is the effective depth of the section (as per Clause 26.S.1.S)."
+  },
+  "M10": {
+    "result": "FAIL",
+    "answer": "The provided excerpts state that the nominal cover may be reduced by 5 mm for main reinforcement up to 12 mm diameter bars for mild exposure (as per Table 16 NOTES and IS456 page 48 NOTES). Since the beam has 16 mm bars, which exceeds the 12 mm limit specified in the excerpt, the permitted reduction based on this specific rule cannot be determined from the provided text."
+  },
+  "MH01": {
+    "result": "PASS",
+    "answer": "The design bond stress for plain tension bars in M25 concrete is 1.4 N/mm$^2$ (as per Table 21, Clause 26.2.1.1).\n\nIf the bars are deformed bars conforming to IS 1786, these values shall be increased by 60 percent (as per the NOTE in Table 21 and Clause 26.2.1.1).\n\nCalculation for deformed bars:\nBase bond stress = $1.4 \\text{ N/mm}^2$\nIncrease = $1.4 \\times 0.60 = 0.84 \\text{ N/mm}^2$\nDesign bond stress for deformed bars = $1.4 + 0.84 = 2.24 \\text{ N/mm}^2$."
+  },
+  "MH02": {
+    "result": "PASS",
+    "answer": "The development length of each bar of bundled bars shall be increased by 20 percent for three bars in contact, as per Clause 26.2.1.2."
+  },
+  "MH03": {
+    "result": "PASS",
+    "answer": "Based on the provided excerpts:\n\n1.  **Anchorage value for a 45\u00b0 bend:** The anchorage value of a bend shall be taken as 4 times the diameter of the bar for each 45\u00b0 bend (as per Cl. 26.2.2.1, I).\n2.  **Maximum allowed anchorage value from bends:** This value is subject to a maximum of 16 times the diameter of the bar (as per Cl. 26.2.2.1, I)."
+  },
+  "MH04": {
+    "result": "PASS",
+    "answer": "According to clause 26.2.2.4, for secondary reinforcement such as stirrups, complete development lengths and anchorage are deemed to have been provided when the bar is bent through an angle of 135\u00b0 and is continued beyond the end of the curve for a length of at least six bar diameters."
+  },
+  "MH05": {
+    "result": "PASS",
+    "answer": "The design shear strength ($\\tau_c$) for M25 concrete with a longitudinal tension steel ratio of 1.0% is found in Table 19.\n\nAccording to Table 19, for a tension reinforcement ratio corresponding to $100 \\text{ As/bd} = 1.00$ and concrete grade M25, the design shear strength of concrete ($\\tau_c$) is $0.64 \\text{ N/mm}^2$ (Table 19, Clause 40.2.1).\n\nNote that Clause 40.2.2 specifies that this value shall be multiplied by a factor involving the axial compressive force ($P$), gross area ($A$), and characteristic compressive strength ($10k$), but since these values are not provided, the calculated value from the table is the shear strength given in Table 19."
+  },
+  "MH06": {
+    "result": "PASS",
+    "answer": "For M25 concrete at a steel percentage of 1.0%, the design shear strength ($\\tau_c$) from Table 19 is $0.64 \\text{ N/mm}^2$ (as per Table 19, Clause 40.2.1). The maximum shear stress ($\\tau_{c,max}$) from Table 20 for M25 concrete is $3.1 \\text{ N/mm}^2$ (as per Table 20, Clauses 40.2.3, 40.5.1 and 41.3.1).\n\nThe code implies a design check where the nominal shear stress shall not exceed half the appropriate values given in Table 20 for solid slabs (as per Clause 40.2.3.1)."
+  },
+  "MH07": {
+    "result": "PASS",
+    "answer": "The enhancement of shear strength may be taken into account in the design of sections near a support by increasing the design shear strength of concrete to $2d/7$ (as per Cl. 40.5.1).\n\nThis enhancement is provided that the design shear stress at the face of the support remains less than the values given in Table 20 (as per Cl. 40.5.1)."
+  },
+  "MH08": {
+    "result": "FAIL",
+    "answer": "IS 456 defines the equivalent shear for torsion design using the following formulas:\n\n1.  **From B-6.3.1:**\n    The equivalent shear, $V'$, shall be calculated from the formula:\n    $$v' = \\frac{\\text{equivalent shear}}{V}$$\n    where $V$ is the shear, $T$ is the torsional moment, and $b''$ is the breadth of the beam (as per page 87, clause unknown).\n\n2.  **From Clause 41.3.1:**\n    The equivalent shear, $V''$, shall be calculated from the formula:\n    $$V'' = \\frac{\\text{shear}}{V}$$\n    where $T$ is the torsional moment, and $b$ is the breadth of the beam (as per page 76, clause 41.3.1)."
+  },
+  "MH09": {
+    "result": "PASS",
+    "answer": "For assessing the strength of a structure or structural member for the limit state of collapse, the partial safety factors ($Y_m$) specified are:\n\n*   **Concrete:** $Y_m$ should be taken as 1.5 (as per Clause 36.4.2.1 and Clause 38.1).\n*   **Steel:** $Y_m$ shall be taken as 1.15 (as per Clause 36.4.2.1 and Clause 38.1)."
+  },
+  "MH10": {
+    "result": "PASS",
+    "answer": "For the DL+1L+ WL load combination, the values specified in the table are as follows:\n\n**Limit State of Collapse:**\n*   Limit State of Collapse > DL: 9.91\n*   Limit State of Collapse > IL: 1.2\n*   Limit State of Collapse > WL: 9.91\n\n**Limit States of Serviceability:**\n*   Limit States of Serviceability > DL: ].0\n*   Limit States of Serviceability > IL: 0.8\n*   Limit States of Serviceability > WL: 0.8"
+  },
+  "H01": {
+    "result": "FAIL",
+    "answer": "The assumed concrete stress-strain relationship for flexural design allows for the relationship between the compressive stress distribution in concrete and the strain in concrete to be assumed to be a rectangle, trapezoid, parabola, or any other shape that results in a prediction of strength in substantial agreement with the results of tests (Cl. 38.1).\n\nKey values and information visible regarding the stress-strain curve (Fig. 21) include:\n\n*   **Stress-Strain Relationship:** The stress-strain curve is provided in Fig. 21 (Cl. 38.1).\n*   **Design Parameters:** For the stress-strain curve in Fig. 21, the design stress block parameters include the Area of the stress block and the Depth of the centre of compressive force from the extreme fibre in compression, where $f_d' =$ characteristic compressive strength of concrete, and $X_u =$ depth of neutral axis (Cl. 38.1).\n*   **Specific Curve Values:** The text associated with Fig. 21 states: $0.36f_x = 0.42X_u$ (page 70).\n*   **Neutral Axis Limits:** The limiting values of the depth of the neutral axis for different grades of steel are based on the assumptions in Cl. 38.1 (page 70)."
+  },
+  "H02": {
+    "result": "FAIL",
+    "answer": "Based on the provided excerpts, the expression $0.36f_x = 0.42x_u$ is associated with the STRESS-STRAIN CURVE FOR CONCRETE (FIG. 21) (Source: IS456.pdf, page 70)."
+  },
+  "H03": {
+    "result": "PASS",
+    "answer": "For reinforcement stress-strain behaviour, the typical curves are given in Fig. 23 (as per clause 38.1).\n\nFor design purposes in flexural limit-state design, the partial safety factor ($Y_m$) applied to the stresses in the reinforcement is equal to 1.15 (as per clause 38.1)."
+  },
+  "H04": {
+    "result": "PASS",
+    "answer": "According to clause 17.4.3, a concrete member represented by a core test shall be considered acceptable if:\n\n1.  The average equivalent cube strength of the cores is equal to at least 85 percent of the cube strength of the grade of concrete specified for the corresponding age.\n2.  No individual core has a strength less than 75 percent."
+  },
+  "H05": {
+    "result": "PASS",
+    "answer": "Based on the provided excerpts, there are different load testing procedures mentioned:\n\n**For Load Tests based on Experimental Investigation (Clause 18.2.3.1):**\n\n*   **Load Applied:** A load equal to the characteristic load multiplied by $1.33 Y_r$, where $Y_r$ shall be taken from Table 18 for the limit state of serviceability.\n*   **Duration:** For 24 hours.\n*   **Recovery Expected:** If within 24 hours of the removal of the load, the structure does not show a recovery of at least 75 percent of the maximum deflection shown during the 24 hours under the load, the test loading should be repeated after a lapse of 72 hours. The recovery after the second test should be at least 75 percent of the maximum deflection shown during the second test.\n*   **Note on Deflection Measurement:** If the maximum deflection shown during 24 hours under load is less than $40 [2I]$ (where $I$ is the effective span in m and $D$ is the overall depth of the section in mm), it is not necessary for the recovery to be measured.\n\n**For a Specific Load Test (Clause 17.6.2):**\n\n*   **Load Applied:** A load equal to the full dead load of the structure plus $1.25$ times the imposed load.\n*   **Duration:** For a period of 24 hours.\n*   **Removal:** The imposed load shall be removed after the period."
+  },
+  "H06": {
+    "result": "REVIEW",
+    "answer": "When openings in flat slabs are located within the column strips, the critical sections specified in 31.6.1 shall be modified so that the part of the periphery of the critical section which is enclosed by radial projections of the openings to the centroid of the reaction area shall be considered ineffective (as per Cl. 31.6.1.2). Additionally, openings shall not encroach upon the column head (as per Cl. 31.6.1.2)."
+  },
+  "H07": {
+    "result": "PASS",
+    "answer": "The critical section for shear shall be at a distance $d l_2$ from the periphery of the column/capital/drop panel, perpendicular to the plane of the slab, where $d$ is the effective depth of the section (as per Clause 31.6.1)."
+  },
+  "H08": {
+    "result": "REVIEW",
+    "answer": "As per Clause 31.6.1.1, in the case of columns near the free edge of a slab, the critical section shall be taken as shown in Fig. 14."
+  },
+  "H09": {
+    "result": "PASS",
+    "answer": "For normal usage assuming idealized conditions, the effective length ($l_{ef}$) of a column in a given plane may be assessed based on Table 28 (E-3).\n\nThe effective length ratio ($l_{ef}/l$) for columns in framed structures may be obtained from the ratio of effective length to unsupported length given in Fig. 26 when relative displacement of the ends of the column is prevented (E-1).\n\nTo use Fig. 26, you should enter the restraint stiffness ratios ($\\beta_1$ and $\\beta_2$) at each end of the column and read off the effective length ratio $l_{ef}/l$ from the nearest labelled curve, as per Annex E-1 (Fig. 26 Usage)."
+  },
+  "H10": {
+    "result": "PASS",
+    "answer": "Fig. 27 represents the Effective Length Ratios for a Column in a Frame Without Restraint Against Sway (as per sample.pdf, page 93, clause Fig. 27, type figure and IS456.pdf, page 94).\n\nIt is relevant when the frame has lateral sway because it provides the effective length ratios ($l_{ef}/l$) for the case where the column's ends are *not* restrained against relative lateral (sway) displacement (sample.pdf, page 93, clause Fig. 27).\n\nAccording to Annex E-1 (sample.pdf, page 92, clause Annex E, E-1), when relative lateral displacement of the ends of the column is not prevented (using Fig. 27), it is recommended that the effective length ratio ($l_{ef}/l$) may not be taken to be less than 1.2."
+  },
+  "A01": {
+    "result": "REVIEW",
+    "answer": "Based on the provided excerpts, here is the durability information required for your design:\n\n**1. Nominal Concrete Cover:**\nFor a \"very severe\" exposure condition, the Nominal Concrete Cover required is 50 mm (Table 16, Table 16).\n\n**2. Adjustments to Cover:**\nA reduction of 5 mm may be made for the concrete cover if the exposure condition is 'very severe' and the concrete grade is M35 and above (NOTES to Table 16, Note 3).\n\n**3. Concrete Grade, Water-Cement Ratio, and Minimum Cement Content:**\nThe durability clause in the code covers requirements for the minimum cement requirement and the maximum water cement ratio (IS456.pdf, page 2). However, the provided excerpts do not specify the actual numerical values for the concrete grade, water-cement ratio, or minimum cement content.\n\n**4. Other Durability Factors:**\nThe durability clause also includes detailed guidance concerning factors affecting durability, such as:\n*   Requirement against exposure to aggressive chemical and sulphate attack (IS456.pdf, page 2).\n*   Limits of chloride content (IS456.pdf, page 2).\n*   Alkali silica reaction (IS456.pdf, page 2).\n*   Importance of compaction, finishing, and curing (IS456.pdf, page 2)."
+  },
+  "A02": {
+    "result": "PASS",
+    "answer": "For heavily reinforced concrete members, such as ribs of main beams, the nominal maximum size of the aggregate should usually be restricted to 5 mm less than the minimum clear distance between the main bars or 5 mm less than the minimum cover to the reinforcement, whichever is smaller (as per clause 5.3.3)."
+  },
+  "A03": {
+    "result": "PASS",
+    "answer": "You should consult **Table 4 Requirements for Concrete Exposed to Sulphate Attack** (Clauses 8.2.2.4 and 9.1.2) [Source: sample.pdf, page 19, clause Table 4].\n\nBefore selecting the concrete mix, you should identify the following inputs from the exposure/environment:\n\n*   Total $\\text{SO}_3$ in Soil (%) [Source: sample.pdf, page 19, clause Table 4]\n*   $\\text{SO}_3$ in 2:1 Water:Soil Extract (g/l) [Source: sample.pdf, page 19, clause Table 4]\n*   $\\text{SO}_3$ in Ground Water (g/l) [Source: sample.pdf, page 19, clause Table 4]\n\nTable 4 provides recommendations for the type of cement, maximum free water/cement ratio, and minimum cement content based on these sulphate concentrations in near-neutral ground water [Source: IS456.pdf, page 19, clause 8.2.2.4]. Additionally, the total water-soluble sulphate content of the concrete mix should not exceed 4 percent by mass of the cement in the mix, unless supersulphated cement is used [Source: IS456.pdf, page 21, clause 8.2.5.3]."
+  },
+  "A04": {
+    "result": "PASS",
+    "answer": "The retrieval chain for reinforcement design when a beam carries torsion plus shear, based on the provided excerpts, is as follows:\n\n1.  **Equivalent Shear Calculation (Clause 41.3.1):**\n    *   The equivalent shear ($V\"$) shall be calculated using the formula: $V\" = \\frac{V}{b}$ (as per Clause 41.3.1).\n\n2.  **Shear Stress Check and Table 20:**\n    *   The equivalent nominal shear stress ($t''$) is calculated as given in Clause 40.1, except for substituting $V\"$ by $V$.\n    *   The values of $t''$ must not exceed the values of $t$, $m''$ given in Table 20 (as per Clause 41.3.1).\n\n3.  **Torsion Design Requirement (Clause 41.4):**\n    *   In structures where torsion is required to maintain equilibrium, members shall be designed for torsion in accordance with Clause 41.2, 41.3, and 41.4 (as per Clause 41).\n\n4.  **Reinforcement Approach for Torsion (Clause 41):**\n    *   The approach to design in this clause follows the principle that torsional reinforcement is not calculated separately from that required for bending and shear.\n    *   Instead, the total longitudinal reinforcement is determined for a fictitious bending moment, which is a function of the actual bending moment and torsion.\n    *   Similarly, web reinforcement is determined for a fictitious shear, which is a function of the actual shear and torsion (as per Clause 41)."
+  },
+  "A05": {
+    "result": "PASS",
+    "answer": "The redistribution of moments in continuous beams must satisfy the following conditions (as per Clause 37.1.1):\n\n1.  **Equilibrium:** Equilibrium between the internal forces and the external loads must be maintained.\n2.  **70% Condition:** The ultimate moment of resistance provided at any section of a member must not be less than 70 percent of the moment at that section obtained from an elastic maximum moment diagram covering all appropriate combinations of loads (as per Clause 37.1.1).\n3.  **Maximum Reduction Rule:** The moment shall not be reduced by more than 30 percent of the numerically largest moment given anywhere by the elastic maximum moments diagram for the particular member, covering all appropriate combinations of loads (as per the excerpt on page 70).\n\nAdditionally, for structures where the structural frame provides the lateral stability, the reductions in moment allowed by condition 37.1.1 (c) shall be restricted to 10 percent for structures over 4 storeys in height (as per the excerpt on page 70)."
+  },
+  "A06": {
+    "result": "PASS",
+    "answer": "The stability index Q may be computed to determine whether a column is a no-sway or a sway column (as per clause 1 of the excerpt).\n\nThe condition for treating the column as a no-sway column is:\nIf $Q \\le 0.04$, then the column in the frame may be taken as a no-sway column. Otherwise, the column will be considered as a sway column (as per clause 1)."
+  },
+  "A07": {
+    "result": "FAIL",
+    "answer": "The effective length of columns in framed structures may be obtained from the ratio of effective length to unsupported length ($l_{ef}/l$) using Fig. 26 when relative displacement of the ends of the column is prevented, or using Fig. 27 when relative lateral displacement of the ends is not prevented, in the absence of more exact analysis (Annex E, Clause 25.2; IS 456:2000, Annex E).\n\nFor the case where relative lateral displacement of the ends is not prevented, it is recommended that the effective length ratio ($l_{ef}/l$) may not be taken to be less than 1.2 (sample.pdf, page 92, E-1; IS 456:2000, Annex E).\n\nFor a more exact assessment, the effective length ($l_{ef}$) of a column in a given plane may be assessed on the basis of Table 28 (sample.pdf, page 92, E-3)."
+  },
+  "A08": {
+    "result": "PASS",
+    "answer": "Annex F provides a calculation method for the design surface crack width, which may be used when specific attention is required to limit the designed crack width.\n\nThe variables required for the calculation of the design surface crack width, according to the equation provided in Annex F, include:\n\n**Variables for the main calculation:**\n*   $a$: distance from the point considered to the surface of the nearest longitudinal bar.\n*   $e$: minimum cover to the longitudinal bar.\n*   $m_i$: average steel strain at the level considered over the depth of the member.\n*   $x'$: depth of the neutral axis.\n\n**Variables for the approximation method (steel stress calculation):**\n*   $A$: area of tension reinforcement.\n*   $b$: width of the section at the centroid of the tension steel.\n*   $e$: strain at the level considered.\n*   $a$: distance from the compression face to the point at which the crack width is being calculated.\n*   $d$: effective depth.\n\nThe excerpt states that the design surface crack width may be calculated from the \"following equation\" (Annex F, page 96), but the specific mathematical expression itself is not fully provided in the excerpt."
+  },
+  "A09": {
+    "result": "PASS",
+    "answer": "The total deflection shall be taken as the sum of the short-term deflection, which is determined in accordance with C-2, and the long-term deflection, which is determined in accordance with C-3 and C-4 (as per page 89).\n\nThe long-term effects separately considered include:\n1. Deflection due to shrinkage (C-3).\n2. Creep deflection due to permanent loads (C-4).\n\nThe creep deflection due to permanent loads may be obtained from the equation: $\\Delta_{creep} = \\Delta_{CC(perm)} - \\Delta_{l(perm)}$, where $\\Delta_{CC(perm)}$ is the initial plus creep deflection due to permanent loads obtained using an elastic analysis with an effective modulus of elasticity, $E_{i\"}$, and $\\Delta_{l(perm)}$ is the short-term deflection due to permanent load using $E_{i\"}$ (as per page 90, C-4.1)."
+  },
+  "A10": {
+    "result": "FAIL",
+    "answer": "The bending-moment coefficients can be chosen from the following sources:\n\n1.  **Table 26:** This table provides the Bending Moment Coefficients for Rectangular Panels Supported on Four Sides with Provision for Torsion at Corners (Clauses D-l.1 and 24.4.1) (Source: IS 456: 2000 Table 26).\n2.  **Table 27:** This table provides the Bending Moment Coefficients for Slabs Spanning in $l_x/l_y$ Directions at Right Angles, Simply Supported on Four Sides (Clause D-Z.J) (Source: IS 456: 2000 Table 27).\n\nFurthermore, slabs spanning in two directions at right angles and carrying uniformly distributed load may be designed by using coefficients given in Annex D (Source: IS 456: 2000, Clause 24.4)."
+  },
+  "X01": {
+    "result": "PASS",
+    "answer": "I could not find this in the provided IS code excerpts."
+  },
+  "X02": {
+    "result": "PASS",
+    "answer": "I could not find this in the provided IS code excerpts (best match confidence too low: 0.00)."
+  },
+  "X03": {
+    "result": "PASS",
+    "answer": "I could not find this in the provided IS code excerpts."
+  },
+  "X04": {
+    "result": "PASS",
+    "answer": "If the shear stress exceeds $1.5\\tau_c$, the flat slab shall be redesigned (as per Clause 31.6.3.2)."
+  },
+  "X05": {
+    "result": "REVIEW",
+    "answer": "Mixing or curing of concrete with sea water is not recommended due to the presence of harmful salts in sea water (Clause 5.4.3).\n\nHowever, under unavoidable circumstances, sea water may be used for mixing or curing in plain concrete with no embedded steel, provided due consideration is given to possible disadvantages and precautions, including the use of an appropriate cement system (Clause 5.4.3).\n\nRegarding reinforced concrete exposed to sea water or directly along the sea-coast, the concrete shall be at least M 30 Grade (Clause 8.2.8)."
+  },
+  "X06": {
+    "result": "PASS",
+    "answer": "No, 20 mm aggregate is not always permitted in a heavily reinforced beam. While 20 mm aggregate is suitable for most work, for heavily reinforced concrete members, such as ribs of main beams, the nominal maximum size of the aggregate should usually be restricted to 5 mm less than the minimum clear distance between the main bars or 5 mm less than the minimum cover to the reinforcement, whichever is smaller (as per clause 5.3.3)."
+  },
+  "X07": {
+    "result": "PASS",
+    "answer": "The anchorage value of a $45^\\circ$ bend shall be taken as 4 times the diameter of the bar, subject to a maximum of 16 times the diameter of the bar (as per Clause 26.2.2.1)."
+  },
+  "X08": {
+    "result": "PASS",
+    "answer": "Based on the provided excerpts, if $Q = 0.04$ exactly, the column may be taken as a no sway column, as the condition states: \"If Q $\\le$ 0.04, then the column in the frame may be taken as no sway column, otherwise the column will be considered as sway column\" (as per clause 1)."
+  },
+  "X09": {
+    "result": "REVIEW",
+    "answer": "No, IS 456 does not require the use of only design-mix concrete and does not prohibit nominal mixes.\n\nAccording to the excerpts:\n*   Design mix concrete is preferred to nominal mix concrete (Clause 9.1).\n*   Nominal mix concrete may be used for concrete of M 20 or lower (Clause 9.3).\n*   Nominal mixes may be used if design mix concrete cannot be used for any reason on the work for grades of M 20 or lower, with the permission of the engineer-in-charge (Clause 9.1)."
+  },
+  "X10": {
+    "result": "FAIL",
+    "answer": "Special requirements of structures, such as shells, folded plates, arches, bridges, chimneys, blast resistant structures, hydraulic structures, liquid retaining structures, and earthqualre resistant structures, have not been covered in this standard. These special standards shall be used in conjunction with this standard (page 12, clause 1)."
+  }
+}

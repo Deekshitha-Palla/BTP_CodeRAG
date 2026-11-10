@@ -1,0 +1,65 @@
+#!/bin/bash
+#PBS -N btp_probe
+#PBS -P strain_struct.nfsg
+#PBS -q scai_q
+#PBS -l select=1:ncpus=8:mem=32gb:ngpus=1:vnode=scai03
+#PBS -l walltime=04:00:00
+#PBS -j oe
+#PBS -o probe_pbs.log
+
+module purge
+module load apps/r_packages/python3.10
+# Load CUDA so the driver libs (libcuda.so) are on LD_LIBRARY_PATH.
+# Check the exact name with:  module avail cuda
+module load compiler/cuda/12.3/compilervars 2>/dev/null || module load cuda 2>/dev/null
+
+# --- Ollama: binary + its bundled CUDA runners ---
+OLLAMA_HOME_DIR=$HOME/ollama
+export PATH=$OLLAMA_HOME_DIR/bin:$PATH
+export LD_LIBRARY_PATH=$OLLAMA_HOME_DIR/lib/ollama:$LD_LIBRARY_PATH
+
+# --- Python env ---
+source ~/venv/bin/activate
+export PYTHONNOUSERSITE=1
+export PYTHONPATH=$HOME/venv/lib/python3.10/site-packages
+
+cd $PBS_O_WORKDIR
+
+# --- GPU sanity checks (job stops early if no GPU) ---
+echo "Node: $(hostname)"
+echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+if ! nvidia-smi; then
+    echo "ERROR: no GPU visible on this node. Check ngpus/node type with HPC admins."
+    exit 1
+fi
+if ! ls $OLLAMA_HOME_DIR/lib/ollama/ | grep -qi cuda; then
+    echo "ERROR: Ollama CUDA libraries missing in $OLLAMA_HOME_DIR/lib/ollama."
+    echo "Re-extract the full tarball:  tar -C ~/ollama -xzf ollama-linux-amd64.tgz"
+    exit 1
+fi
+
+# --- Ollama GPU settings ---
+export OLLAMA_DEBUG=1                 # logs GPU detection details
+export OLLAMA_HOST=127.0.0.1:11434
+export OLLAMA_NUM_GPU=999             # push all layers to GPU if they fit
+export OLLAMA_KEEP_ALIVE=-1           # keep model loaded between requests
+export OLLAMA_MODELS=$HOME/.ollama/models
+
+ollama serve > ollama.log 2>&1 &
+OLLAMA_PID=$!
+for i in $(seq 1 30); do curl -s localhost:11434/api/tags > /dev/null && break; sleep 2; done
+
+echo "---- Ollama GPU detection ----"
+grep -iE "inference compute|no compatible GPU|library=" ollama.log
+
+# Monitor GPU usage in background (every 60 s)
+nvidia-smi --query-gpu=timestamp,utilization.gpu,memory.used,memory.total \
+           --format=csv -l 60 > gpu_usage.csv &
+SMI_PID=$!
+
+python probe_penalty.py    # no --fresh: resumes from the checkpoint if one exists
+
+echo "---- Model placement (should say 100% GPU) ----"
+ollama ps
+
+kill $SMI_PID $OLLAMA_PID 2>/dev/null

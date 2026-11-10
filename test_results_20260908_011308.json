@@ -1,0 +1,114 @@
+[
+  {
+    "id": "TC09",
+    "category": "table",
+    "question": "According to Table 16, what nominal concrete cover is required for severe exposure?",
+    "answer": "According to Table 16A, the Nominal Concrete Cover required for Severe exposure is 45 mm.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.4.1 (text)"
+    ]
+  },
+  {
+    "id": "TC10",
+    "category": "table",
+    "question": "List the nominal concrete covers for mild, moderate, severe, very severe and extreme exposure conditions.",
+    "answer": "Based on the provided IS code excerpts, the nominal concrete covers for the specified exposure conditions are as follows:\n\n*   **Mild:** Not less than 20 mm (as per the header of the table)\n*   **Moderate:** 30 mm\n*   **Severe:** 45 mm\n*   **Very severe:** 50 mm\n*   **Extreme:** 75 mm\n\n(Source: sample.pdf, page 9)",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.2.1 (text)",
+      "sample.pdf p5 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC11",
+    "category": "table",
+    "question": "List the characteristic compressive strengths corresponding to M25, M35, M50 and M60 concrete.",
+    "answer": "Based on the provided excerpts, the characteristic compressive strengths corresponding to the requested concrete grades are as follows:\n\n*   **M25 and M35:** These grades fall under \"Standard Concrete\" in the second table, corresponding to compressive strengths of 25 N/mm\u00b2 and 35 N/mm\u00b2, respectively (as per the table listing M 25 M30 M 35 M 40 M45 $\\rightarrow$ 25 30 35 40 45).\n*   **M50:** The compressive strengths associated with M50 are 45 N/mm\u00b2 and 50 N/mm\u00b2 (as per the first table structure).\n*   **M60:** For High Strength Concrete, the grade M 60 corresponds to a compressive strength of 60 N/mm\u00b2 (as per the table listing M S0 M.S5 M 60 M 65 M 70 M 75 M 80 $\\rightarrow$ 50 55 60 65 70 75 80).",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p2 cl.unknown (table)",
+      "sample.pdf p3 cl.6.2.2 (text)",
+      "sample.pdf p3 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC12",
+    "category": "table",
+    "question": "What ranges of slump are suggested for low, medium and high degrees of workability?",
+    "answer": "Based on the provided table, the suggested ranges of slump for different degrees of workability are:\n\n*   **Low Workability:** 25-75 mm (for Mass concrete; Lightly reinforced sections in slabs, beams, walls, columns; Floors)\n*   **Medium Workability:** 50-100 or 75-100 mm (for Hand placed pavements; Canal lining; Strip footings Heavily reinforced sections in slabs, beams, walls, columns)\n*   **High Workability:** 100-150 mm (for beams, walls, columns; Slipform work; Pumped concrete Trench fill)",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p4 cl.unknown (table)",
+      "sample.pdf p4 cl.unknown (table_note)",
+      "sample.pdf p4 cl.7.1 (text)"
+    ]
+  },
+  {
+    "id": "TC13",
+    "category": "table",
+    "question": "According to Table 4, for sulphate Class 5 conditions, what minimum cement content and maximum free water-cement ratio are specified?",
+    "answer": "According to Table 4, for sulphate Class 5 conditions:\n\n*   The maximum face water-cement ratio is 0.40 (as per the row corresponding to Class 5).\n*   The minimum cement content is not specified in that row of the table.",
+    "verdict": "FAIL",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p5 cl.8.2.2.4 (text)",
+      "sample.pdf p5 cl.8.2.4.1 (text)",
+      "sample.pdf p6 cl.unknown (text)"
+    ]
+  },
+  {
+    "id": "TC14",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported slab for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for simply supported beams for $h=2$ is 45 mm.",
+    "verdict": "FAIL",
+    "known_issue": true,
+    "note": "Known bug: pipeline has answered 40 (the beam column) instead of 35 (slab column).",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p5 cl.8.2.3.2 (text)",
+      "sample.pdf p9 cl.unknown (table)"
+    ]
+  },
+  {
+    "id": "TC15",
+    "category": "table",
+    "question": "According to Table 16A, what nominal cover is required for a simply supported beam for 2 hours of fire resistance?",
+    "answer": "According to Table 16A, the nominal cover required for a simply supported beam for $h=2$ (which corresponds to 2 hours of fire resistance) is 40 mm.",
+    "verdict": "PASS",
+    "known_issue": false,
+    "note": "",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p5 cl.8.2.3.2 (text)"
+    ]
+  },
+  {
+    "id": "TC16",
+    "category": "table",
+    "question": "For 3 hours of fire resistance, compare the nominal cover requirements of simply supported beams, continuous beams, simply supported slabs and continuous slabs.",
+    "answer": "I could not find this in the provided IS code excerpts. The provided table relates nominal cover requirements for beams and columns based on fire resistance (Table 16A), but it does not contain specific data comparing the nominal cover requirements for simply supported slabs and continuous slabs.",
+    "verdict": "REVIEW",
+    "known_issue": false,
+    "note": "Compound multi-cell lookup \u2014 read the answer manually.",
+    "top_sources": [
+      "sample.pdf p9 cl.unknown (table)",
+      "sample.pdf p9 cl.unknown (table_note)",
+      "sample.pdf p8 cl.23.3 (text)"
+    ]
+  }
+]

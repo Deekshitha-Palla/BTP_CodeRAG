@@ -1,0 +1,107 @@
+#!/bin/bash
+#PBS -N btp_suite
+#PBS -P strain_struct.nfsg
+#PBS -q scai_q
+#PBS -l select=1:ncpus=2:mem=32gb:ngpus=1
+#PBS -l walltime=04:00:00
+#PBS -j oe
+#PBS -o run_suite_pbs.log
+#
+# Usage (from ~/trail):
+#   qsub -v RUN_TAG=v2_baseline run_suite.pbs
+#       -> full 70-question run, results in test_runs/checkpoint_v2_baseline.json
+#   qsub -v RUN_TAG=v2_subset,EXTRA="--ids MH08+X10+EM10" run_suite.pbs
+#       -> only those questions (separate IDs with +; qsub -v splits on commas)
+#   qsub -v RUN_TAG=probe1,CMD="python GENERATION.py --probe 'question one' 'question two'" run_suite.pbs
+#       -> any other command that needs Ollama (no commas inside CMD)
+# The same RUN_TAG resumes an interrupted run; a new RUN_TAG starts a clean one,
+# so old checkpoints never contaminate a new run.
+
+RUN_TAG=${RUN_TAG:-run_$(date +%Y%m%d_%H%M)}
+OLLAMA_PORT=${OLLAMA_PORT:-11500}   # NOT 11434: another user's Ollama may already own that port
+
+module purge
+module load apps/r_packages/python3.10
+module load compiler/cuda/12.3/compilervars 2>/dev/null || module load cuda 2>/dev/null
+
+# --- Ollama: binary + its bundled CUDA runners ---
+OLLAMA_HOME_DIR=$HOME/ollama
+export PATH=$OLLAMA_HOME_DIR/bin:$PATH
+export LD_LIBRARY_PATH=$OLLAMA_HOME_DIR/lib/ollama:$LD_LIBRARY_PATH
+
+# --- Python env ---
+source ~/venv/bin/activate
+export PYTHONNOUSERSITE=1
+export PYTHONPATH=$HOME/venv/lib/python3.10/site-packages
+
+# --- The cluster proxy breaks requests to the local Ollama server ---
+unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
+export NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost
+
+cd $PBS_O_WORKDIR
+mkdir -p test_runs
+
+echo "Node: $(hostname)   RUN_TAG=$RUN_TAG   port=$OLLAMA_PORT"
+echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+if ! nvidia-smi; then
+    echo "ERROR: no GPU visible on this node."
+    exit 1
+fi
+if ! ls $OLLAMA_HOME_DIR/lib/ollama/ | grep -qi cuda; then
+    echo "ERROR: Ollama CUDA libraries missing in $OLLAMA_HOME_DIR/lib/ollama."
+    exit 1
+fi
+
+# --- Our own Ollama server, on our own port, with our own model store ---
+export OLLAMA_HOST=127.0.0.1:$OLLAMA_PORT   # read by both `ollama serve` and the Python client
+export OLLAMA_DEBUG=1
+export OLLAMA_NUM_GPU=999
+export OLLAMA_KEEP_ALIVE=-1
+export OLLAMA_MODELS=$HOME/.ollama/models
+
+if curl -s --noproxy '*' http://127.0.0.1:$OLLAMA_PORT/api/tags > /dev/null; then
+    echo "ERROR: something is already listening on port $OLLAMA_PORT on this node."
+    echo "Resubmit with another port:  qsub -v OLLAMA_PORT=11600,RUN_TAG=$RUN_TAG run_suite.pbs"
+    exit 1
+fi
+
+OLLAMA_LOG=test_runs/ollama_${RUN_TAG}.log
+ollama serve > $OLLAMA_LOG 2>&1 &
+OLLAMA_PID=$!
+for i in $(seq 1 30); do
+    curl -s --noproxy '*' http://127.0.0.1:$OLLAMA_PORT/api/tags > /dev/null && break
+    sleep 2
+done
+
+# Stop early (instead of 70 x 404) if our server is not up or a model is missing.
+TAGS=$(curl -s --noproxy '*' http://127.0.0.1:$OLLAMA_PORT/api/tags)
+for MODEL in gemma4:26b nomic-embed-text; do
+    if ! echo "$TAGS" | grep -q "\"$MODEL"; then
+        echo "ERROR: model $MODEL not found on our server (port $OLLAMA_PORT, OLLAMA_MODELS=$OLLAMA_MODELS)."
+        echo "Server reply: $TAGS"
+        kill $OLLAMA_PID 2>/dev/null
+        exit 1
+    fi
+done
+
+echo "---- Ollama GPU detection ----"
+grep -iE "inference compute|no compatible GPU|library=" $OLLAMA_LOG
+
+nvidia-smi --query-gpu=timestamp,utilization.gpu,memory.used,memory.total \
+           --format=csv -l 60 > test_runs/gpu_${RUN_TAG}.csv &
+SMI_PID=$!
+
+if [ -n "$CMD" ]; then
+    echo "---- Running: $CMD ----"
+    eval "$CMD"
+else
+    python test_suite.py --checkpoint test_runs/checkpoint_${RUN_TAG}.json $EXTRA
+fi
+
+echo "---- Model placement (should say 100% GPU) ----"
+ollama ps
+
+echo "---- 404s in Ollama log (should be 0) ----"
+grep -c " 404 " $OLLAMA_LOG
+
+kill $SMI_PID $OLLAMA_PID 2>/dev/null
